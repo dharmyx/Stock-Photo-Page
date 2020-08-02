@@ -1,0 +1,234 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #DCE3E9;
+}
+
+main {
+    max-width: 80%;
+    margin: 5rem auto;
+    padding: 0 0 3rem;
+    border-radius: 2rem;
+    background-color: #ffffff;
+}
+div.inner-main {
+    max-width: 75%;
+    margin: 0 auto 3rem;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 3rem 0 2rem;
+}
+
+header > p > a {
+    padding: 0 20px;
+    text-decoration: none;
+    font-family: 'Mulish', sans-serif;
+    font-size: .88rem;
+    color: #2E3336;
+}
+header > p > a:hover {
+    border-bottom: 2px solid #2E3336;
+}
+
+header > p > a.icons {
+    padding-right: 0px;
+}
+
+div.header2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+div.searchinput {
+    display: flex;
+    width: 50%;
+    padding: 1rem 0;
+}
+input[type=text] {
+    width: 80%;
+    padding: 10px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1.2px solid #ccc;
+    font-family: 'Mulish', sans-serif;
+    font-size: .88rem;
+}
+div.searchImg {
+    position: relative;
+    top: 5px;
+    right: 35px;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ccc;
+    background-image: url(Files/search.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+
+a.submit-Btn {
+    border: 1px solid #2E3336;
+    text-decoration: none;
+    padding: 12px 3rem;
+    border-radius: 5px;
+    background-color: #2E3336;
+    box-shadow: 0px 11px 14px #2E3336;
+    color: #ffffff;
+    font-family: 'Mulish', sans-serif;
+    font-size: .88rem;
+}
+a.submit-Btn:hover {
+    background-color: #354b5a;
+    border: 1px solid #354b5a;
+}
+
+div.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "a b c"
+    "d e f";
+    gap: 15px;
+    padding: 2rem 0 5rem;
+}
+div.img-gallery1 {
+    grid-area: a;
+    width: 100%;
+    height: 200px;
+    background-image: url(Files/makeup.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.img-gallery2 {
+    grid-area: b;
+    width: 100%;
+    height: 200px;
+    background-image: url(Files/Corridor.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.img-gallery3 {
+    grid-area: c;
+    width: 100%;
+    height: 200px;
+    background-image: url(Files/Architecture.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.img-gallery4 {
+    grid-area: d;
+    width: 100%;
+    height: 200px;
+    background-image: url(Files/Foodie.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.img-gallery5 {
+    grid-area: e;
+    width: 100%;
+    height: 200px;
+    background-image: url(Files/CityLife.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.img-gallery6 {
+    grid-area: f;
+    width: 100%;
+    height: 200px;
+    background-image: url(Files/DoorWay.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+@media (max-width: 768px) {
+
+    main {
+        max-width: 90%;
+        margin: 3rem auto;
+        padding: 0 0 2rem;
+    }
+    div.inner-main {
+        max-width: 80%;
+        margin: 0 auto 1.5rem;
+    }
+    div.gallery {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "a b"
+        "c d"
+        "e f";
+    }
+}
+
+@media (max-width: 425px) {
+
+    header {
+        justify-content: center;
+        padding: 2rem 0 1rem;
+    }
+    header > p > a {
+        padding: 0 10px;
+    }
+    header > p > a.icons {
+        padding-right: 10px;
+    }
+    div.header2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding: 1.6rem 0;
+    }
+    div.searchinput {
+        width: 100%;
+        justify-content: center;
+    }
+    input[type=text] {
+        width: 100%;
+    }
+    a.submit-Btn {
+        padding: 8px 2rem;
+        font-size: .78rem;
+    }
+    div.gallery {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0 2.5rem;
+    }
+}
+
+@media (max-width: 375px) {
+
+    header > p > a {
+        padding: 0 8px;
+    }
+    header > p > a.icons {
+        padding-right: 8px;
+    }
+}
