@@ -119,7 +119,6 @@ div.img-gallery2 {
     grid-area: b;
     width: 100%;
     height: 200px;
-    margin-top: 10px;
     background-image: url(Files/Corridor.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -130,7 +129,6 @@ div.img-gallery3 {
     grid-area: c;
     width: 100%;
     height: 200px;
-    margin-top: 10px;
     background-image: url(Files/Architecture.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -141,7 +139,6 @@ div.img-gallery4 {
     grid-area: d;
     width: 100%;
     height: 200px;
-    margin-top: 10px;
     background-image: url(Files/Foodie.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -152,7 +149,6 @@ div.img-gallery5 {
     grid-area: e;
     width: 100%;
     height: 200px;
-    margin-top: 10px;
     background-image: url(Files/CityLife.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -163,7 +159,6 @@ div.img-gallery6 {
     grid-area: f;
     width: 100%;
     height: 200px;
-    margin-top: 10px;
     background-image: url(Files/DoorWay.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -226,6 +221,15 @@ div.img-gallery6 {
         flex-direction: column;
         padding: 2rem 0 2.5rem;
     }
+    
+    div.img-gallery2,
+    div.img-gallery3,
+    div.img-gallery4,
+    div.img-gallery5,
+    div.img-gallery6 {
+        margin-top: 10px
+    }
+
 }
 
 @media (max-width: 375px) {
